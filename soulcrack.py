@@ -6,7 +6,7 @@ import datetime
 import os
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7711342282:AAE37EclaH0Zfp8q9LdpN3lPYZZBjoVtSUg')
+bot = telebot.TeleBot('7877126466:AAH6lNFpehRtrqV7pU4Gl2hHV5UNupLLsfo')
 
 # Admin user IDs
 admin_id = {"80227", "1174779637", "12345667"}
@@ -217,8 +217,8 @@ def handle_soul(message):
             king = command[1]
             soulking = int(command[2])  
             time = int(command[3])  
-            if time > 181:
-                response = "Error: Time interval must be less than 80."
+            if time > 241:
+                response = "Error: Time interval must be less than 241."
             else:
                 record_command_logs(user_id, '/soul_compiled', king, soulking, time)
                 log_command(user_id, king, soulking, time)
